@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<letovi>
+  <let sifra="ABC" brojLeta="1" odrediste="Beograd" destinacija="Frankfurt" vremePolaska="1/1/2018 12:00:00 AM" vremeDolaska="1/10/2018 12:00:00 AM" cena="10000"/>
+  <let sifra="DEF" brojLeta="2" odrediste="Madrid" destinacija="Prag" vremePolaska="8/24/2018 12:00:00 AM" vremeDolaska="9/5/2018 12:00:00 AM" cena="6000"/>
+  <let sifra="GHI" brojLeta="3" odrediste="Pariz" destinacija="London" vremePolaska="12/10/2018 12:00:00 AM" vremeDolaska="12/20/2018 12:00:00 AM" cena="7500"/>
+</letovi>

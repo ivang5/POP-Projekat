@@ -1,0 +1,16 @@
+S:\c#\ConsoleApp1\AerodromWPF\bin\Release\AerodromWPF.exe.config
+S:\c#\ConsoleApp1\AerodromWPF\bin\Release\AerodromWPF.exe
+S:\c#\ConsoleApp1\AerodromWPF\bin\Release\AerodromWPF.pdb
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\AerodromiWindow.g.cs
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\MainWindow.g.cs
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\App.g.cs
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\AerodromWPF_MarkupCompile.cache
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\AerodromWPF_MarkupCompile.lref
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\AerodromiWindow.baml
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\MainWindow.baml
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\AerodromWPF.g.resources
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\AerodromWPF.Properties.Resources.resources
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\AerodromWPF.csproj.GenerateResource.cache
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\AerodromWPF.csproj.CoreCompileInputs.cache
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\AerodromWPF.exe
+S:\c#\ConsoleApp1\AerodromWPF\obj\Release\AerodromWPF.pdb

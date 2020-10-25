@@ -1,0 +1,67 @@
+﻿<Window x:Class="AerodromWPF.AddNEditLet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AerodromWPF"
+        mc:Ignorable="d"
+        Title="Add/Edit Let" Height="850" Width="550">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFEACE21" Offset="0"/>
+                <GradientStop Color="#FFD12C2C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+
+            <RowDefinition Height="200"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Name="LblSifra" Content="Sifra:" Grid.Column="0" Grid.Row="0" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtSifra" Grid.Column="1" Grid.Row="0" Text="{Binding Path=Sifra}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblPilot" Content="Pilot:" Grid.Column="0" Grid.Row="1" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtPilot" Grid.Column="1" Grid.Row="1" Text="{Binding Path=Pilot}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblBrojLeta" Content="Broj Leta:" Grid.Column="0" Grid.Row="2" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtBrojLeta" Grid.Column="1" Grid.Row="2" Text="{Binding Path=BrojLeta}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblDestinacija" Content="Destinacija:" Grid.Column="0" Grid.Row="3" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtDestinacija" Grid.Column="1" Grid.Row="3" Text="{Binding Path=Destinacija}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblOdrediste" Content="Odrediste:" Grid.Column="0" Grid.Row="4" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtOdrediste" Grid.Column="1" Grid.Row="4" Text="{Binding Path=Odrediste}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblVremePolaska" Content="Vreme Polaska:" Grid.Column="0" Grid.Row="5" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtVremePolaska" Grid.Column="1" Grid.Row="5" Text="{Binding Path=VremePolaska}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblVremeDolaska" Content="Vreme Dolaska:" Grid.Column="0" Grid.Row="6" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtVremeDolaska" Grid.Column="1" Grid.Row="6" Text="{Binding Path=VremeDolaska}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblCena" Content="Cena:" Grid.Column="0" Grid.Row="7" FontSize="20" HorizontalAlignment="Right" Margin="0,0,0,125" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtCena" Grid.Column="1" Grid.Row="7" Text="{Binding Path=Cena}" Margin="0,0,0,125" Background="#FFE8D0D0"></TextBox>
+
+        <Button Name="Sacuvaj" Content="Sacuvaj" Click="Sacuvaj_Click" Grid.Row="7" Grid.Column ="0" Margin="91,150,162,-20" Grid.ColumnSpan="2" Background="#FFEED47E">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7"/>
+            </Button.Effect>
+        </Button>
+        <Button Name="Odustani" Content="Odustani" Click="Odustani_Click" Grid.Row="7" Grid.Column ="1" Margin="100,150,-49,-20" Background="#FFEED47E">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7"/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>

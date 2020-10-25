@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aerodromi>
+  <aerodrom sifra="BEG" naziv="Nikola Tesla" grad="Beograd" aktivan="true"/>
+  <aerodrom sifra="AMS" naziv="Amsterdam A" grad="Amsterdam" aktivan="true"/>
+  <aerodrom sifra="LON" naziv="London A" grad="London" aktivan="true"/>
+  <aerodrom sifra="MDR" naziv="Madrid A" grad="Madrid" aktivan="true"/>
+</aerodromi>

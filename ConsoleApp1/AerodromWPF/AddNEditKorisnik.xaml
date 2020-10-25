@@ -1,0 +1,81 @@
+﻿<Window x:Class="AerodromWPF.AddNEditKorisnik"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AerodromWPF"
+        mc:Ignorable="d"
+        Title="Profil" Height="800" Width="550">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFEACE21" Offset="0"/>
+                <GradientStop Color="#FFD12C2C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Name="LblIme" Content="Ime:" Grid.Column="0" Grid.Row="0" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtIme" Grid.Column="1" Grid.Row="0" Text="{Binding Path=Ime}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblPrezime" Content="Prezime:" Grid.Column="0" Grid.Row="1" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtPrezime" Grid.Column="1" Grid.Row="1" Text="{Binding Path=Prezime}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblEmail" Content="Email:" Grid.Column="0" Grid.Row="2" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtEmail" Grid.Column="1" Grid.Row="2" Text="{Binding Path=Email}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblAdresa" Content="Adresa:" Grid.Column="0" Grid.Row="3" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtAdresa" Grid.Column="1" Grid.Row="3" Text="{Binding Path=Adresa}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblPol" Content="Pol:" Grid.Column="0" Grid.Row="4" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <ComboBox Name="CbPol" Grid.Column="1" Grid.Row="4" Text="{Binding Path=Pol}">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FFE8D0D0" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+
+        <Label Name="LblKorisnickoIme" Content="Korisnicko Ime:" Grid.Column="0" Grid.Row="5" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtKorisnickoIme" Grid.Column="1" Grid.Row="5" Text="{Binding Path=KorisnickoIme}" Background="#FFE8D0D0"></TextBox>
+
+        <Label Name="LblLozinka" Content="Lozinka:" Grid.Column="0" Grid.Row="6" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <TextBox Name="TxtLozinka" Grid.Column="1" Grid.Row="6" Text="{Binding Path=Lozinka}" Background="#FFE8D0D0"/>
+
+        <Label Name="LblTip" Content="Tip:" Grid.Column="0" Grid.Row="7" FontSize="20" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic"></Label>
+        <ComboBox Name="CbTip" Grid.Column="1" Grid.Row="7" Text="{Binding Path=Tip}">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FFE8D0D0" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+
+        <Button Name="Sacuvaj" Content="Sacuvaj" Click="Sacuvaj_Click" Grid.Row="8" Grid.Column ="0" Margin="93,55,160,75" Grid.ColumnSpan="2" Background="#FFEED47E">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7"/>
+            </Button.Effect>
+        </Button>
+        <Button Name="Odustani" Content="Odustani" Click="Odustani_Click" Grid.Row="8" Grid.Column ="1" Margin="100,55,-49,75" Background="#FFEED47E">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7"/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>

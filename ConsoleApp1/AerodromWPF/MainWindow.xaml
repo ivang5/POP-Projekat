@@ -1,0 +1,60 @@
+﻿<Window x:Class="AerodromWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AerodromWPF"
+        mc:Ignorable="d"
+        Title="Pocetna strana" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFEACE21" Offset="0"/>
+                <GradientStop Color="#FFD12C2C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Name="LblOpcije" HorizontalAlignment="Center" Grid.Row="0"></Label>
+        <Button Name="BtnAerodromi" Content="Aerodromi" Width="100"  HorizontalAlignment="Left" Click="BtnAerodromi_Click" Grid.Row="1" Margin="202,64,0,-13" Background="#FFEED47E">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7"/>
+            </Button.Effect>
+        </Button>
+        <Button Name="BtnLetovi" Content="Letovi" Width="100" HorizontalAlignment="Left" Click="BtnLetovi_Click" Grid.Row="1" Margin="164,174,0,-123" Background="#FFEED47E">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7"/>
+            </Button.Effect>
+        </Button>
+        <Button Name="BtnKorisnici" Content="Korisnici" Width="100" HorizontalAlignment="Left" Click="BtnKorisnici_Click" Grid.Row="1" Margin="61,64,0,-13" Background="#FFEED47E">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7"/>
+            </Button.Effect>
+        </Button>
+        <Button Name="BtnAviokompanije" Content="Aviokompanije" Width="100" HorizontalAlignment="Left" Click="BtnAviokompanije_Click" Grid.Row="1" Margin="342,64,0,-13" Background="#FFEED47E">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7"/>
+            </Button.Effect>
+        </Button>
+        <Button Name="BtnAvioni" Content="Avioni" Width="100" HorizontalAlignment="Left" Click="BtnAvioni_Click" Grid.Row="1" Margin="488,64,0,-13" Background="#FFEED47E">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7"/>
+            </Button.Effect>
+        </Button>
+        <Button Name="BtnKarte" Content="Karte" Width="100" HorizontalAlignment="Left" Click="BtnKarte_Click" Grid.Row="1" Margin="391,174,0,-123" Background="#FFEED47E">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7"/>
+            </Button.Effect>
+        </Button>
+        <Button Name="btnClose" Content="Odjavi se" Height="50" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Click="btnClose_Click" Grid.Row="1" Margin="0,0,10,-257" Background="#FFEED47E">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7"/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Izaberite entitet:" HorizontalAlignment="Left" Height="60" Margin="194,72,0,0" FontSize="36" VerticalAlignment="Top" Width="310" Grid.RowSpan="2" FontWeight="Bold" FontStyle="Italic"/>
+    </Grid>
+</Window>

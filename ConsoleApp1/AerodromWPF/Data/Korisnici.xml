@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<korisnici>
+  <korisnik ime="Pera" prezime="Peric" email="peraperic@gmail.com" adresa="Pere Perica 18" pol="Musko" korisnickoIme="pera" lozinka="pera123" tip="Admin"/>
+  <korisnik ime="Pera" prezime="Peric" email="peraperic@gmail.com" adresa="Pere Perica 18" pol="Musko" korisnickoIme="sad" lozinka="sad" tip="Putnik"/>
+</korisnici>
